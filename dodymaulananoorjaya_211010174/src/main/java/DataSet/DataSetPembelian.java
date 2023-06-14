@@ -23,35 +23,35 @@ public class DataSetPembelian {
     }
 
     public void insertnomor_transaksi(Integer isi) {
-        nomor_transaksi.add(isi);
+        this.nomor_transaksi.add(isi);
     }
 
-    public ArrayList<Integer> getnomor_transaksi(Integer isi) {
+    public ArrayList<Integer> getnomor_transaksi() {
         return this.nomor_transaksi;
     }
     
     public void inserttgl(String isi) {
-        tgl.add(isi);
+        this.tgl.add(isi);
     }
-    public ArrayList<String> gettgl(String isi) {
+    public ArrayList<String> gettgl() {
         return this.tgl;
     }
     public void insertnama_supplier(String isi) {
-        nama_supplier.add(isi);
+        this.nama_supplier.add(isi);
     }
-    public ArrayList<String> getnama_supplier (String isi) {
+    public ArrayList<String> getnama_supplier () {
         return this.nama_supplier;
     }
     public void insertjml(Integer isi) {
-        jml.add(isi);
+       this.jml.add(isi);
     }
-    public ArrayList<Integer> getjml(Integer isi) {
+    public ArrayList<Integer> getjml() {
         return this.jml;
     }
     public void insertketerangan(String isi) {
-        keterangan.add(isi);
+        this.keterangan.add(isi);
     }
-    public ArrayList<String> getketerangan(String isi) {
+    public ArrayList<String> getketerangan() {
         return this.keterangan;
     }
 

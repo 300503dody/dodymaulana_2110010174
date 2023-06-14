@@ -27,58 +27,58 @@ public class DataSetUser {
     }
     
      public void insertusername(String isi) {
-        username.add(isi);
+        this.username.add(isi);
     }
 
-    public ArrayList<String> getusername(String isi) {
+    public ArrayList<String> getusername() {
         return this.username;
     }
     
      public void insertpassword(String isi) {
-        password.add(isi);
+        this.password.add(isi);
     }
 
-    public ArrayList<String> getpassword(String isi) {
+    public ArrayList<String> getpassword() {
         return this.password;
     }
     
      public void insertlevel(Integer isi) {
-        level.add(isi);
+        this.level.add(isi);
     }
 
-    public ArrayList<Integer> getlevel(Integer isi) {
+    public ArrayList<Integer> getlevel() {
         return this.level;
     }
     
      public void insertnama_user(String isi) {
-        nama_user.add(isi);
+        this.nama_user.add(isi);
     }
 
-    public ArrayList<String> getnama_user(String isi) {
+    public ArrayList<String> getnama_user() {
         return this.nama_user;
     }
     
      public void inserttgl_lahir(String isi) {
-        tgl_lahir.add(isi);
+        this.tgl_lahir.add(isi);
     }
 
-    public ArrayList<String> gettgl_lahir(String isi) {
+    public ArrayList<String> gettgl_lahir() {
         return this.tgl_lahir;
     }
     
      public void insertalamat(String isi) {
-        alamat.add(isi);
+        this.alamat.add(isi);
     }
 
-    public ArrayList<String> getalamat(String isi) {
+    public ArrayList<String> getalamat() {
         return this.alamat;
     }
     
      public void inserttelepon(String isi) {
-        telepon.add(isi);
+        this.telepon.add(isi);
     }
 
-    public ArrayList<String> gettelepon(String isi) {
+    public ArrayList<String> gettelepon() {
         return this.telepon;
     }
 }

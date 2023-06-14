@@ -16,32 +16,32 @@ public class DataSetDetail_penjualan {
     private ArrayList<String> harga;
 
     public void insertnomor_transaksi(Integer isi) {
-        nomor_transaksi.add(isi);
+        this.nomor_transaksi.add(isi);
     }
 
-    public ArrayList<Integer> getnomor_transaksi(Integer isi) {
+    public ArrayList<Integer> getnomor_transaksi() {
         return this.nomor_transaksi;
     }
     
      public void insertnomor_barang(Integer isi) {
-        nomor_barang.add(isi);
+        this.nomor_barang.add(isi);
     }
 
-    public ArrayList<Integer> getnomor_barang(Integer isi) {
+    public ArrayList<Integer> getnomor_barang() {
         return this.nomor_barang;
     }
     
     public void insertjml(Integer isi) {
-        jml.add(isi);
+        this.jml.add(isi);
     }
-    public ArrayList<Integer> getjml(Integer isi) {
+    public ArrayList<Integer> getjml() {
         return this.jml;
     }
     
     public void insertharga(String isi) {
-        harga.add(isi);
+        this.harga.add(isi);
     }
-    public ArrayList<String> getharga (String isi) {
+    public ArrayList<String> getharga () {
         return this.harga;
     }
     

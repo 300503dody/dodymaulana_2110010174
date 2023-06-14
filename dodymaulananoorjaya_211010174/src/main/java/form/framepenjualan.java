@@ -3,23 +3,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package form;
-import DataSet.DataSetDetailPembelian;
+import DataSet.DataSetPenjualan;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author ASUS
  */
-public class framedetail_pembelian extends javax.swing.JFrame {
-    DataSetDetailPembelian data;
+public class framepenjualan extends javax.swing.JFrame {
+        DataSetPenjualan data;
+
 
     /**
-     * Creates new form framedetail_pembelian
+     * Creates new form framepenjualan
      */
-    public framedetail_pembelian() {
+    public framepenjualan() {
         initComponents();
-        this.setLocationRelativeTo(null);
-        data = new DataSetDetailPembelian();
+         this.setLocationRelativeTo(null);
+        data = new DataSetPenjualan();
     }
 
     /**
@@ -31,29 +32,22 @@ public class framedetail_pembelian extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        txtindex = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         txtnotransaksi = new javax.swing.JTextField();
-        txtnobrg = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        txtjml = new javax.swing.JTextField();
+        txttgl = new javax.swing.JTextField();
+        txtnkonsumen = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        txtharga = new javax.swing.JTextField();
+        txtjml = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        txtketerangan = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        txtindex = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel5.setText("harga");
-
-        jButton1.setText("simpan");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         jButton2.setText("baca");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -66,9 +60,20 @@ public class framedetail_pembelian extends javax.swing.JFrame {
 
         jLabel2.setText("no.transaksi");
 
-        jLabel3.setText("no.brg");
+        jLabel3.setText("tgl");
 
-        jLabel4.setText("jumlah");
+        jLabel5.setText("jumlah");
+
+        jLabel4.setText("nama.supplier");
+
+        jLabel6.setText("keterangan");
+
+        jButton1.setText("simpan");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,17 +92,24 @@ public class framedetail_pembelian extends javax.swing.JFrame {
                 .addComponent(txtindex, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
-                .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtharga)
-                    .addComponent(txtjml)
-                    .addComponent(txtnobrg)
-                    .addComponent(txtnotransaksi)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5))
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtjml)
+                            .addComponent(txtnkonsumen)
+                            .addComponent(txttgl)
+                            .addComponent(txtnotransaksi)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jLabel6)
+                        .addGap(39, 39, 39)
+                        .addComponent(txtketerangan))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,16 +123,20 @@ public class framedetail_pembelian extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(txtnobrg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txttgl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(txtjml, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtnkonsumen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(txtharga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(72, 72, 72)
+                    .addComponent(txtjml, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(txtketerangan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
@@ -131,25 +147,27 @@ public class framedetail_pembelian extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        data.insertnomor_transaksi(Integer.valueOf(txtnotransaksi.getText()));
-        data.insertnomor_barang(Integer.valueOf(txtnobrg.getText()));
-        data.insertjml(Integer.valueOf(txtjml.getText()));
-        data.insertharga(txtharga.getText());
-        JOptionPane.showMessageDialog(this, "Data Berhasil Disimpan");
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         int i = Integer.valueOf(txtindex.getText());
         String isiPesan=
         "\nnomor transaksi : "+data.getnomor_transaksi().get(i)+
-        "\nnomor barang : "+data.getnomor_barang().get(i)+
-        "\nharga : "+data.getharga().get(i)+
-        "\njumlah: "+data.getjml().get(i);
+        "\ntgl : "+data.gettgl().get(i)+
+        "\nnama_konsumen : "+data.getnama_konsumen().get(i)+
+        "\njumlah: "+data.getjml().get(i)+
+        "\nketerangan: "+data.getketerangan().get(i);
         JOptionPane.showMessageDialog(this,isiPesan);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        data.insertnomor_transaksi(Integer.valueOf(txtnotransaksi.getText()));
+        data.inserttgl(txttgl.getText());
+        data.insertnama_konsumen(txtnkonsumen.getText());
+        data.insertjml(Integer.valueOf(txtjml.getText()));
+        data.insertketerangan(txtketerangan.getText());
+        JOptionPane.showMessageDialog(this, "Data Berhasil Disimpan");
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,20 +186,20 @@ public class framedetail_pembelian extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(framedetail_pembelian.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(framepenjualan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(framedetail_pembelian.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(framepenjualan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(framedetail_pembelian.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(framepenjualan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(framedetail_pembelian.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(framepenjualan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new framedetail_pembelian().setVisible(true);
+                new framepenjualan().setVisible(true);
             }
         });
     }
@@ -194,10 +212,12 @@ public class framedetail_pembelian extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField txtharga;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField txtindex;
     private javax.swing.JTextField txtjml;
-    private javax.swing.JTextField txtnobrg;
+    private javax.swing.JTextField txtketerangan;
+    private javax.swing.JTextField txtnkonsumen;
     private javax.swing.JTextField txtnotransaksi;
+    private javax.swing.JTextField txttgl;
     // End of variables declaration//GEN-END:variables
 }

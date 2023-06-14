@@ -31,13 +31,13 @@ public class DataSetBarang {
     }
     
     public void insertnama_barang(String isi) {
-        nomor_barang.add(isi);
+        this.nama_barang.add(isi);
     }
     public ArrayList<String> getnama_barang() {
         return this.nama_barang;
     }
     public void insertharga(String isi) {
-        harga.add(isi);
+        this.harga.add(isi);
     }
     public ArrayList<String> getharga () {
         return this.harga;
@@ -49,28 +49,11 @@ public class DataSetBarang {
         return this.jml;
     }
     public void insertketerangan(String isi) {
-        keterangan.add(isi);
+        this.keterangan.add(isi);
     }
     public ArrayList<String> getketerangan() {
         return this.keterangan;
     }
-
-    public void Setnomorbarang() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public ArrayList<String> keterangan() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void getDataSetnomorbarang(String text) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public Object getnomor_barang() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
    
     
 }

@@ -3,23 +3,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package form;
-import DataSet.DataSetDetailPembelian;
+import DataSet.DataSetDetail_penjualan;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author ASUS
  */
-public class framedetail_pembelian extends javax.swing.JFrame {
-    DataSetDetailPembelian data;
+public class framedetail_penjualan extends javax.swing.JFrame {
+    DataSetDetail_penjualan data;
 
     /**
-     * Creates new form framedetail_pembelian
+     * Creates new form framedetail_penjualan
      */
-    public framedetail_pembelian() {
+    public framedetail_penjualan() {
         initComponents();
         this.setLocationRelativeTo(null);
-        data = new DataSetDetailPembelian();
+        data = new DataSetDetail_penjualan();
     }
 
     /**
@@ -31,22 +31,28 @@ public class framedetail_pembelian extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        txtnotransaksi = new javax.swing.JTextField();
-        txtnobrg = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         txtjml = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         txtharga = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         txtindex = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        txtnotransaksi = new javax.swing.JTextField();
+        txtnobrg = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel2.setText("no.transaksi");
+
+        jLabel3.setText("no.brg");
+
         jLabel5.setText("harga");
+
+        jLabel4.setText("jumlah");
 
         jButton1.setText("simpan");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -63,12 +69,6 @@ public class framedetail_pembelian extends javax.swing.JFrame {
         });
 
         jLabel1.setText("detail pembelian");
-
-        jLabel2.setText("no.transaksi");
-
-        jLabel3.setText("no.brg");
-
-        jLabel4.setText("jumlah");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -168,20 +168,20 @@ public class framedetail_pembelian extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(framedetail_pembelian.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(framedetail_penjualan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(framedetail_pembelian.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(framedetail_penjualan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(framedetail_pembelian.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(framedetail_penjualan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(framedetail_pembelian.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(framedetail_penjualan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new framedetail_pembelian().setVisible(true);
+                new framedetail_penjualan().setVisible(true);
             }
         });
     }
