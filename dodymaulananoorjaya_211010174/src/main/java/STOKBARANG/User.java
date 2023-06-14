@@ -1,26 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package STOKBARANG;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
-/**
- *
- * @author ASUS
- */
 public class User {
- private String username;
+    private String username;
     private String password;
     private int level;
     private String nama_user;
-    private LocalDate tgl_lahir;
+    private String tgl_lahir;
     private String alamat;
     private String telepon;
 
     // Constructor
-    public User(String username, String password, int level, String nama_user, LocalDate tgl_lahir, String alamat, String telepon) {
+    public User(String username, String password, int level, String nama_user, String tgl_lahir, String alamat, String telepon) {
         this.username = username;
         this.password = password;
         this.level = level;
@@ -30,7 +23,6 @@ public class User {
         this.telepon = telepon;
     }
 
-    // Getter dan Setter untuk atribut username
     public String getUsername() {
         return username;
     }
@@ -39,7 +31,6 @@ public class User {
         this.username = username;
     }
 
-    // Getter dan Setter untuk atribut password
     public String getPassword() {
         return password;
     }
@@ -48,7 +39,6 @@ public class User {
         this.password = password;
     }
 
-    // Getter dan Setter untuk atribut level
     public int getLevel() {
         return level;
     }
@@ -57,25 +47,22 @@ public class User {
         this.level = level;
     }
 
-    // Getter dan Setter untuk atribut nama_user
-    public String getNamaUser() {
+    public String getNama_user() {
         return nama_user;
     }
 
-    public void setNamaUser(String nama_user) {
+    public void setNama_user(String nama_user) {
         this.nama_user = nama_user;
     }
 
-    // Getter dan Setter untuk atribut tgl_lahir
-    public LocalDate getTanggalLahir() {
+    public String getTgl_lahir() {
         return tgl_lahir;
     }
 
-    public void setTanggalLahir(LocalDate tgl_lahir) {
+    public void setTgl_lahir(String tgl_lahir) {
         this.tgl_lahir = tgl_lahir;
     }
 
-    // Getter dan Setter untuk atribut alamat
     public String getAlamat() {
         return alamat;
     }
@@ -84,7 +71,6 @@ public class User {
         this.alamat = alamat;
     }
 
-    // Getter dan Setter untuk atribut telepon
     public String getTelepon() {
         return telepon;
     }
@@ -92,8 +78,9 @@ public class User {
     public void setTelepon(String telepon) {
         this.telepon = telepon;
     }
+    
 
-    // Metode lainnya
+    
     public void displayInfo() {
         System.out.println("Username: " + username);
         System.out.println("Level: " + level);
@@ -101,5 +88,7 @@ public class User {
         System.out.println("Tanggal Lahir: " + tgl_lahir);
         System.out.println("Alamat: " + alamat);
         System.out.println("Telepon: " + telepon);
-    }   
+    }
+
+
 }
